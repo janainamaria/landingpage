@@ -47,20 +47,24 @@ header {
   font-size: 1.2rem;
 }
 
-.menu a:hover:not(.button) {
+.menu a:hover:not(.assinar > a) {
   border-bottom: 0.3rem solid var(--red);
 }
 
-.menu .button {
+ .assinar > a{
   border: none;
   border-radius: 2rem;
-  padding: 0.8rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  cursor: pointer;
   color: var(--white);
   font-weight: bold;
   background-color: var(--red);
 }
 
-.menu .button:hover {
+ .assinar > a:hover {
   background-color: var(--white);
   color: var(--red);
   transition-duration: 0.5s;
@@ -74,7 +78,7 @@ header {
     gap: 0;
   }
 
-  .menu .button {
+ .assinar  > a{
     border: none;
     border-radius: 2rem;
     padding: 0.6rem;
@@ -104,7 +108,7 @@ header {
     font-size: 2rem;
   }
 
-  .menu .button {
+ .assinar > a{
     border: none;
     border-radius: 2rem;
     padding: 0.3rem;
@@ -119,4 +123,15 @@ header {
 .mobile{
   display: none;
 }
+
 }
+
+@media(max-width:768px){
+  header{
+    padding-top: 1.8rem !important;
+    }
+  .assinar{
+    display: none;
+  }
+  }
+

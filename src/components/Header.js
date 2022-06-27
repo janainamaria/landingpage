@@ -2,6 +2,7 @@ import '../components/Header.css'
 import React, { Fragment } from 'react'
 import { RiMenu3Fill } from "react-icons/ri";
 import MenuMobile from './NavBar'
+import MenuModal from './MenuModal'
 
 const Header = ({setMenuIsVisible}) => {
   return (
@@ -28,9 +29,10 @@ const Header = ({setMenuIsVisible}) => {
               </li>
 
               <li>
-                <a href="#" className="button">
-                  Compre aqui
-                </a>
+                {/* <a href="#" className="saleHere">Assinar</a> */}
+                <div className='assinar'>
+            <MenuModal/>
+            </div>
               </li>
             </ul>
           </div>
