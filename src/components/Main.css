@@ -1,0 +1,103 @@
+.secao {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.title a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 2rem;
+  padding: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  color: var(--white);
+  margin: 3rem;
+}
+
+.title h1 {
+  font-size: 2.5rem;
+}
+
+.title p {
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+.title span {
+  color: var(--red);
+}
+
+.sacola {
+  margin-left: 1rem;
+  justify-content: center;
+  display: inline-grid;
+}
+
+.contact {
+  align-items: self-start;
+  text-align: center;
+  display: inherit;
+}
+
+@media (max-width: 768px) {
+  .secao {
+    display: grid;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 548px) {
+  .secao {
+    display: grid;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+  }
+  .image img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .title{
+    font-size: 0.6rem;
+  }
+  .title h1{
+    font-size: 1.3rem;
+  }
+  .title p {
+    font-size: 0.8rem;
+  }
+  .title a{
+    font-size: 0.6rem;
+    padding: 0.2rem;
+    
+  }
+  path{
+    size: 2;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 540px) {
+  .secao {
+    display: grid;
+    margin-top: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem;
+  }
+  .image img{
+    width: 27rem;
+    height: 20rem;
+  }
+}
+

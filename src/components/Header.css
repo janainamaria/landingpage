@@ -1,0 +1,122 @@
+.logo {
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile{
+  color: var(--white);
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  transition: .7s;
+  margin-top:1.7rem;
+}
+
+.container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.logo h2 {
+  color: var(--white);
+}
+
+.logo span {
+  color: var(--red);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  transition: width 2s;
+  justify-content: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.2rem;
+}
+
+.menu a:hover:not(.button) {
+  border-bottom: 0.3rem solid var(--red);
+}
+
+.menu .button {
+  border: none;
+  border-radius: 2rem;
+  padding: 0.8rem;
+  color: var(--white);
+  font-weight: bold;
+  background-color: var(--red);
+}
+
+.menu .button:hover {
+  background-color: var(--white);
+  color: var(--red);
+  transition-duration: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 0;
+  }
+
+  .menu .button {
+    border: none;
+    border-radius: 2rem;
+    padding: 0.6rem;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--red);
+    margin-left: 1rem;
+  }
+  ul > li > a {
+    display: none;
+  }
+  .menu h2 {
+    justify-content: left;
+    display: flex;
+    
+  }
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+  .logo h2 {
+    font-size: 2rem;
+  }
+
+  .menu .button {
+    border: none;
+    border-radius: 2rem;
+    padding: 0.3rem;
+    color: var(--white);
+    font-weight: bold;
+    background-color: var(--red);
+    margin-left: 1rem;
+  }
+}
+
+@media(min-width:768px){
+.mobile{
+  display: none;
+}
+}

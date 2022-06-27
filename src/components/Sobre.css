@@ -1,0 +1,95 @@
+.sobre {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+.texto a {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--red);
+  border-radius: 2rem;
+  padding: 0.8rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.texto {
+  color: var(--white);
+  margin: 3rem;
+}
+
+.texto h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  color: var(--red);
+}
+
+.imagem img {
+  width: 30rem;
+  height: 20rem;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.increver {
+  align-items: center;
+}
+
+.texto p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.contact {
+  align-items: self-start;
+  text-align: center;
+  display: inherit;
+}
+
+@media (max-width: 900px) {
+  .sobre {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+    margin-bottom: 8rem;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 548px) {
+  .imagem img{
+   display: none;
+  }
+  .texto h3{
+    font-size: 1rem;
+  }
+  .texto p{
+    font-size: 0.8rem;
+  }
+  .texto a {
+    
+    padding: 0.5rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 400px) and (max-width: 540px) {
+  .imagem img{
+    width: 20rem;
+    height: 17rem;
+  }
+}
