@@ -30,6 +30,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
 .menu {
@@ -41,13 +42,15 @@ header {
   justify-content: center;
 }
 
-.menu a {
+.menu .button-header {
   text-decoration: none;
   color: var(--white);
   font-size: 1.2rem;
+  background:transparent;
+  border: none;
 }
 
-.menu a:hover:not(.assinar > a) {
+.menu .button-header:hover:not(.assinar > .button-header) {
   border-bottom: 0.3rem solid var(--red);
 }
 
@@ -58,6 +61,7 @@ header {
   padding-bottom: 0.3rem;
   padding-left: 0.9rem;
   padding-right: 0.9rem;
+  font-size: 1.2rem;
   cursor: pointer;
   color: var(--white);
   font-weight: bold;
@@ -78,7 +82,7 @@ header {
     gap: 0;
   }
 
- .assinar  > a{
+ .assinar  > .button-header{
     border: none;
     border-radius: 2rem;
     padding: 0.6rem;
@@ -87,7 +91,7 @@ header {
     background-color: var(--red);
     margin-left: 1rem;
   }
-  ul > li > a {
+  ul > li > .button-header {
     display: none;
   }
   .menu h2 {
@@ -108,7 +112,7 @@ header {
     font-size: 2rem;
   }
 
- .assinar > a{
+ .assinar > .button-header{
     border: none;
     border-radius: 2rem;
     padding: 0.3rem;
@@ -128,9 +132,13 @@ header {
 
 @media(max-width:768px){
   header{
-    padding-top: 1.8rem !important;
+    padding-top: 1.8rem;
+    margin-top: 0.2rem;
     }
   .assinar{
+    display: none;
+  }
+  .button-header{
     display: none;
   }
   }

@@ -6,7 +6,7 @@ import MenuModal from './MenuModal'
 
 const Sobre = () => {
   return (
-    <Fragment>
+  <Fragment>
       <section className="sobre" id='sobre'>
         <div className="texto">
           <h3>Sobre nossa plataforma:</h3>
