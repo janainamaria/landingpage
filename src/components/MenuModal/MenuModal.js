@@ -1,20 +1,42 @@
-import React, { Fragment, useEffect, useState } from 'react'
+import React, { Fragment } from 'react'
 import ReactCircleModal from 'react-circle-modal'
 import { AiOutlineClose } from "react-icons/ai";
+import './MenuModal.css'
 import api from '../../utils/api/api'
+import axios from "axios";
 
+let cep;
+function handleChange(e) {
+  cep+=e.target.value
+}
+ function cepVerify(e){
+  console.log(cep)
+//    let cepNumber = document.getElementById('cep').value
+//   console.log(e.target)
+//   let cepCall;
+//   let options = {
+//     method:'GET',
+//     mode:'cors',
+//     cache:'default'
+//   }
+//   if(!cepNumber || cepNumber === "" || cepNumber.lenght < 7 || cepNumber === undefined || cepNumber === 'undefined'){
+
+//     fetch(`https://viacep.com.br/ws/${cepNumber}/json/`,options)
+//     .then(response => response.json())
+//     .then(data => {
+// cepCall = data
+//     })
+//     .catch(err => {
+//       console.log(err)
+//     })
+//     console.log(cepCall)
+//   }else{
+//     console.log("Nenhum CEP enviado")
+//   }
+  e.preventDefault();
+}
 
 const Menu = () => {
-  const [cep, cepCall] = useState();
-
-  useEffect(() => {
-    api
-      .get("/users/romulo27")
-      .then((response) => cepCall(response.data))
-      .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
-      });
-  }, []);
     return (
       <ReactCircleModal
         backgroundColor="var(--grey)"
@@ -35,12 +57,11 @@ const Menu = () => {
             </a>
             <div class="login-page">
             <div class="form">
-              <form class="register-form">
-              </form>
-              <form class="login-form">
-                <input type="text" placeholder="Digite seu cep"/>
+              <form class="login-form" onSubmit={cepVerify}>
+                <input type="text" placeholder="Digite seu cep" onChange={handleChange}/>
             
-                <button className='search'>Procurar</button>
+                <button className='search' type='submit' >Confirmar</button>
+                <p id="result"></p>
            
               </form>
             </div>
