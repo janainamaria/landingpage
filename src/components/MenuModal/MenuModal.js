@@ -1,10 +1,20 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import ReactCircleModal from 'react-circle-modal'
 import { AiOutlineClose } from "react-icons/ai";
-import menu from './MenuModal.css'
+import api from '../../utils/api/api'
 
 
 const Menu = () => {
+  const [cep, cepCall] = useState();
+
+  useEffect(() => {
+    api
+      .get("/users/romulo27")
+      .then((response) => cepCall(response.data))
+      .catch((err) => {
+        console.error("ops! ocorreu um erro" + err);
+      });
+  }, []);
     return (
       <ReactCircleModal
         backgroundColor="var(--grey)"

@@ -1,8 +1,8 @@
-import '../components/Sobre.css'
+import './Sobre.css'
 import React, { Fragment } from 'react'
-import alunos from '../images/estudantes.jpg'
+import alunos from '../../images/estudantes.jpg'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
-import MenuModal from './MenuModal'
+import MenuModal from '../MenuModal/MenuModal'
 
 const Sobre = () => {
   return (

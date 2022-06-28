@@ -1,7 +1,7 @@
-import { Container } from './Style';
+import { Container } from './Style.js';
 import { IoClose } from 'react-icons/io5';
 import { useEffect } from 'react';
-import MenuModal from './MenuModal'
+import MenuModal from '../MenuModal/MenuModal'
 
 
  const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) =>{

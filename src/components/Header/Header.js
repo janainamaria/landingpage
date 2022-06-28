@@ -1,8 +1,7 @@
-import '../components/Header.css'
+import './Header.css'
 import React, { Fragment } from 'react'
 import { RiMenu3Fill } from "react-icons/ri";
-import MenuMobile from './NavBar'
-import MenuModal from './MenuModal'
+import MenuModal from '../MenuModal/MenuModal'
 import ScrollIntoView from 'react-scroll-into-view'
 
 const Header = ({setMenuIsVisible}) => {
