@@ -1,4 +1,4 @@
-import '../components/Products.css'
+import './Products.css'
 import React, { Fragment, useRef } from 'react'
 import {
   BsBookHalf,

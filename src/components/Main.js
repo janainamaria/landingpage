@@ -2,7 +2,7 @@ import '../components/Main.css'
 import React, { Fragment } from 'react'
 import homem from '../images/homem.svg'
 import { BsFillArrowDownCircleFill } from 'react-icons/bs'
-
+import ScrollIntoView from 'react-scroll-into-view'
 
 
 const Main = () => {
@@ -20,10 +20,12 @@ const Main = () => {
           </h1>
           <p>#1 Em serviços de educação de todo o Brasil</p>
           <div className="contact">
-            <a href="#">
+            <ScrollIntoView selector="#sobre">
+            <button className='button-go-about'>
               QUERO PARTICIPAR{' '}
               <BsFillArrowDownCircleFill size={40} className="sacola" />
-            </a>
+            </button>
+            </ScrollIntoView>
           </div>
         </div>
         <div className="image">

@@ -1,11 +1,12 @@
-import '../components/Sobre.css'
+import './Sobre.css'
 import React, { Fragment } from 'react'
-import alunos from '../images/estudantes.jpg'
+import alunos from '../../images/estudantes.jpg'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
+import MenuModal from '../MenuModal/MenuModal'
 
 const Sobre = () => {
   return (
-    <Fragment>
+  <Fragment>
       <section className="sobre" id='sobre'>
         <div className="texto">
           <h3>Sobre nossa plataforma:</h3>
@@ -27,9 +28,7 @@ const Sobre = () => {
               professores do pais.
             </p>
           </div>
-          <div className="increver">
-            <a href="">INSCREVA-SE</a>
-          </div>
+            <MenuModal/>
         </div>
         <div className="imagem">
           <img src={alunos} />

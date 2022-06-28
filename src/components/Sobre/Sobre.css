@@ -12,6 +12,7 @@
   background-color: var(--red);
   border-radius: 2rem;
   padding: 0.8rem;
+  cursor: pointer;
   font-weight: bold;
   display: flex;
   justify-content: space-around;
@@ -39,9 +40,7 @@
   margin: 1rem;
 }
 
-.increver {
-  align-items: center;
-}
+
 
 .texto p {
   font-size: 1rem;
@@ -56,6 +55,8 @@
   text-align: center;
   display: inherit;
 }
+
+
 
 @media (max-width: 900px) {
   .sobre {

@@ -1,6 +1,7 @@
-import { Container } from './Style';
+import { Container } from './Style.js';
 import { IoClose } from 'react-icons/io5';
 import { useEffect } from 'react';
+import MenuModal from '../MenuModal/MenuModal'
 
 
  const MenuMobile = ({ menuIsVisible, setMenuIsVisible }) =>{
@@ -14,7 +15,7 @@ import { useEffect } from 'react';
       <nav>
         <a href="/products">Cursos</a>
         <a href="/about">Sobre</a>
-        <a href="/">Contato</a>
+        <MenuModal/>
       </nav>
     </Container>
   )

@@ -1,7 +1,8 @@
-import '../components/Header.css'
+import './Header.css'
 import React, { Fragment } from 'react'
 import { RiMenu3Fill } from "react-icons/ri";
-import MenuMobile from './NavBar'
+import MenuModal from '../MenuModal/MenuModal'
+import ScrollIntoView from 'react-scroll-into-view'
 
 const Header = ({setMenuIsVisible}) => {
   return (
@@ -16,21 +17,34 @@ const Header = ({setMenuIsVisible}) => {
                 </h2>
               </li>
               <li>
-                <a href="#home">Home</a>
+              <ScrollIntoView selector="#home">
+            <button className='button-header'>
+              Home{' '}
+            </button>
+            </ScrollIntoView>
               </li>
               <li>
                 {' '}
-                <a href="#cursos">Cursos</a>
+                <ScrollIntoView selector="#cursos">
+            <button className='button-header'>
+              Cursos{' '}
+            </button>
+            </ScrollIntoView>
               </li>
               <li>
                 {' '}
-                <a href="#">Sobre</a>
+                <ScrollIntoView selector="#sobre">
+            <button className='button-header'>
+              Sobre{' '}
+            </button>
+            </ScrollIntoView>
               </li>
 
               <li>
-                <a href="#" className="button">
-                  Compre aqui
-                </a>
+           
+                <div className='assinar'>
+            <MenuModal/>
+            </div>
               </li>
             </ul>
           </div>
